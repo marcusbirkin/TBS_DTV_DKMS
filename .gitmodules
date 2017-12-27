@@ -1,0 +1,6 @@
+[submodule "media_build"]
+	path = media_build
+	url = https://github.com/tbsdtv/media_build.git
+[submodule "media"]
+	path = media
+	url = https://github.com/tbsdtv/linux_media.git
