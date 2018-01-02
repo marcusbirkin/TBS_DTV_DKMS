@@ -1,3 +1,2 @@
 #!/bin/sh
-cd media_build
-make cleanall
+git submodule foreach git reset --hard
