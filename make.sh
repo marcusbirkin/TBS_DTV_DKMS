@@ -7,5 +7,5 @@ git submodule update --recursive --remote
 cd media_build 
 if [ -z "$kernelver" ]; then kernelver=`uname -r` ; fi
 make dir DIR=../media KERNELRELEASE=$kernelver 
-make allyesconfig 
+make allyesconfig KERNELRELEASE=$kernelver 
 make -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null) KERNELRELEASE=$kernelver
